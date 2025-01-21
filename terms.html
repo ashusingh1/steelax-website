@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Steelax Interio</title>
+
+    <!-- responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- For IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- master stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive stylesheet -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- Favicon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+
+    <style>
+        /* Container for USP items */
+        .usp-container {
+            display: flex;
+            /* Arranges items in a row */
+            justify-content: space-between;
+            /* Distributes items evenly */
+            flex-wrap: wrap;
+            /* Allows wrapping for smaller screens */
+            margin: 20px auto;
+            /* Centers the container horizontally */
+            width: 80%;
+            /* Adjust width as needed */
+            gap: 20px;
+            /* Adds spacing between items */
+        }
+
+        /* Individual USP item styling */
+        .usp-item {
+            text-align: center;
+            /* Centers text below image */
+            margin: 10px;
+            flex: 1 1 calc(20% - 40px);
+            /* Makes items responsive and evenly distributed */
+            max-width: 170px;
+            /* Optional: prevents items from stretching too wide */
+        }
+
+        /* Image styling for consistency */
+        .usp-item img {
+            width: 100%;
+            /* Ensures the image adapts to the container width */
+            max-width: 170px;
+            /* Limits maximum width */
+            height: 150px;
+            /* Sets a consistent height */
+            object-fit: cover;
+            /* Ensures the image fills the area without distortion */
+            border-radius: 10px;
+            /* Optional: adds rounded corners */
+            /* Adds a subtle shadow for design consistency */
+            transition: transform 0.3s ease;
+            /* Smooth zoom effect on hover */
+        }
+
+        /* Text styling */
+        .usp-item p {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        /* Hover effect for images */
+        .usp-item img:hover {
+            transform: scale(1.05);
+            /* Zoom effect on hover */
+        }
+
+
+        /* Main container for process flow */
+        .process-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Centers items in the container */
+            gap: 20px;
+            /* Adds spacing between items */
+            padding: 20px;
+            /* Adds space around the container */
+            background: #f9f9f9;
+            /* Light background for contrast */
+        }
+
+        .process-item {
+            text-align: center;
+            background: #fff;
+            /* White background for each item */
+            border-radius: 10px;
+            /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Smooth hover effects */
+            padding: 20px;
+            width: 280px;
+            max-width: 100%;
+        }
+
+        .process-item:hover {
+            transform: translateY(-10px);
+            /* Slightly elevates on hover */
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            /* Stronger shadow on hover */
+        }
+
+        .process-image {
+            width: 100%;
+            height: auto;
+            /* Keeps aspect ratio intact */
+            border-radius: 10px;
+            /* Matches the container's rounded corners */
+            margin-bottom: 15px;
+            /* Space between image and text */
+        }
+
+        .process-step {
+            font-size: 18px;
+            font-weight: 500;
+            color: #333;
+            margin-top: 10px;
+            line-height: 1.4;
+            /* Improves readability */
+        }
+
+        .sec-title .title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            /* Makes the title stand out */
+            position: relative;
+        }
+
+        .sec-title .title::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #ff5733;
+            /* Accent color */
+            margin: 10px auto 0;
+        }
+
+        @media (max-width: 768px) {
+            .process-container {
+                gap: 15px;
+            }
+
+            .process-item {
+                width: 100%;
+                /* Full width for smaller screens */
+            }
+        }
+    </style>
+
+</head>
+<body>
+  <section class="top-bar-style2">
+    <div class="top-style2 clearfix">
+        <div class="top-style2-left">
+            <p><span class="icon-music"></span>We have Answers</p>
+            <ul>
+                <li>+91- 8408886616</li>
+                <li>info@steelaxinterio.com</li>
+                <!--<li>Mon - Sat: 9am to 6pm</li>-->
+            </ul>
+        </div>
+        <div class="top-style2-right">
+            <ul class="top-right-menu">
+                <!--<li><a href="#">Media</a></li>-->
+                <!--<li><a href="#">360O View</a></li>-->
+                <!--<li><a href="#">FAQ</a></li>-->
+            </ul>
+            <ul class="topbar-social-links">
+                <li>
+                    <a href="https://www.facebook.com/Steelax.in/"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/steelaxinterio/?hl=en"><i
+                            class="fa-brands fa-instagram fa-2x"></i></a>
+                </li>
+                <!--<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>-->
+                <!--<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>-->
+            </ul>
+        </div>
+    </div>
+</section>
+<header class="main-header header-style2 stricky">
+  <div class="inner-container clearfix">
+      <div class="logo-box-style2 float-left">
+          <a href="index.html">
+              <img src="images/resources/logo.png" alt="Awesome Logo" />
+          </a>
+      </div>
+      <div class="main-menu-box float-right">
+          <nav class="main-menu style2 clearfix">
+              <div class="navbar-header clearfix">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse"
+                      data-target=".navbar-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
+              <div class="navbar-collapse collapse clearfix">
+                  <ul class="navigation clearfix">
+                      <li class=""><a href="index.html">Home</a></li>
+                      <li class=""><a href="about.html">About Us</a></li>
+                      <li class="dropdown">
+                          <a href="services.html">Products</a>
+                          <!-- <ul>
+                              <li><a href="services.html">View All Services</a></li>
+                              <li><a href="ser-concept-designs.html">Concept Designs</a></li>
+                              <li><a href="ser-project-designs.html">Project Designs</a></li>
+                              <li><a href="ser-make-overs.html">Make Overs</a></li>
+                              <li><a href="ser-consulting.html">Consulting</a></li>
+                              <li><a href="ser-glass-wrought.html">Glass & Wrought</a></li>
+                              <li><a href="ser-space-planning.html">Space Planning</a></li>
+                          </ul> -->
+                      </li>
+                      <li class="dropdown"><a href="gallery.html">Gallery</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li class="current"><a href="terms.html">T&C</a></li>
+                  </ul>
+              </div>
+          </nav>
+          <div class="mainmenu-right style2">
+              <div class="button">
+                  <button type="button" class="btn-one" data-toggle="modal" data-target="#exampleModalCenter">
+                      Get a Quote<span class="flaticon-next"></span>
+                  </button>
+              </div>
+              <!-- Button trigger modal -->
+          </div>
+      </div>
+  </div>
+</header>
+<h1>Terms and Conditions</h1>
+<footer class="footer-area style4" style="margin-top: 50px;">
+  <div class="container">
+      <div class="row">
+          <!--Start single footer widget-->
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div class="single-footer-widget marbtm50-s4">
+                  <div class="our-info-box">
+                      <div class="footer-logo">
+                          <a href="index.html">
+                              <img src="images/resources/logo.png" alt="Awesome Logo" />
+                          </a>
+                      </div>
+                      <div class="text">
+                          <p>
+                              We are one of the leading manufacturing companies of Stainless Steel Modular
+                              kitchens and Portable Steel Wardrobes. Managed by @akestechinfotech
+                          </p>
+                      </div>
+                      <div class="follow-us-social-links clearfix">
+                          <span>Follw Us On:</span>
+                          <ul>
+                              <li><a href="https://www.facebook.com/Steelax.in/"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                              <li><a href="https://www.instagram.com/steelaxinterio/?hl=en"><i
+                                  class="fa-brands fa-instagram fa-2x"></i></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--End single footer widget-->
+          <!--Start single footer widget-->
+          <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+              <div class="single-footer-widget s4">
+                  <div class="title-style2">
+                      <h3>Usefull Links</h3>
+                  </div>
+                  <div class="usefull-links">
+                      <ul class="float-left">
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="services.html">Products</a></li>
+                          <li><a href="about.html">About</a></li>
+                          <li><a href="gallery.html">Gallery</a></li>
+                      </ul>
+                      <ul class="float-left borders-left">
+
+
+
+                          <li><a href="contact.html">Contact Us</a></li>
+                          <li><a href="terms.html">Terms and Conditions</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <!--End single footer widget-->
+          <!--Start single footer widget-->
+          <div class="col-xl-4 col-lg-3 col-md-12 col-sm-12">
+              <div class="single-footer-widget pdtop50-s4">
+                  <div class="title-style2">
+                      <h3>Subscribe Us</h3>
+                  </div>
+                  <div class="subscribe-box">
+                      <form class="subscribe-form" action="#">
+                          <input type="email" name="email" placeholder="Your Email" />
+                          <button class="btn-one" type="submit">
+                              Subscribe<span class="flaticon-next"></span>
+                          </button>
+                      </form>
+                      <div class="text">
+                          <p>
+                              <span>*</span>Subscribe us and get latest news and updates
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!--End single footer widget-->
+      </div>
+  </div>
+</footer>
+</body>
+</html>
