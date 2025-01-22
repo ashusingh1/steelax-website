@@ -1560,7 +1560,7 @@ select:focus {
     text-align: center;
     padding: 13px 28px 14px !important;
 }
-.contact-details-form input[type="text"], .contact-details-form input[type="email"], .contact-details-form textarea {
+.contact-details-form input[type="tel"], .contact-details-form input[type="tel"], .contact-details-form textarea {
     margin-bottom: 12px !important;
 }
 .contact-details-form textarea {

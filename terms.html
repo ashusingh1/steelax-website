@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>Steelax Interio</title>
 
@@ -21,312 +22,802 @@
 
     <style>
         /* Container for USP items */
-        .usp-container {
-            display: flex;
-            /* Arranges items in a row */
-            justify-content: space-between;
-            /* Distributes items evenly */
-            flex-wrap: wrap;
-            /* Allows wrapping for smaller screens */
-            margin: 20px auto;
-            /* Centers the container horizontally */
-            width: 80%;
-            /* Adjust width as needed */
-            gap: 20px;
-            /* Adds spacing between items */
-        }
-
-        /* Individual USP item styling */
-        .usp-item {
-            text-align: center;
-            /* Centers text below image */
-            margin: 10px;
-            flex: 1 1 calc(20% - 40px);
-            /* Makes items responsive and evenly distributed */
-            max-width: 170px;
-            /* Optional: prevents items from stretching too wide */
-        }
-
-        /* Image styling for consistency */
-        .usp-item img {
-            width: 100%;
-            /* Ensures the image adapts to the container width */
-            max-width: 170px;
-            /* Limits maximum width */
-            height: 150px;
-            /* Sets a consistent height */
-            object-fit: cover;
-            /* Ensures the image fills the area without distortion */
-            border-radius: 10px;
-            /* Optional: adds rounded corners */
-            /* Adds a subtle shadow for design consistency */
-            transition: transform 0.3s ease;
-            /* Smooth zoom effect on hover */
-        }
-
-        /* Text styling */
-        .usp-item p {
-            margin-top: 10px;
-            font-size: 14px;
-            font-weight: 500;
-            color: #333;
-        }
-
-        /* Hover effect for images */
-        .usp-item img:hover {
-            transform: scale(1.05);
-            /* Zoom effect on hover */
-        }
-
-
-        /* Main container for process flow */
-        .process-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            /* Centers items in the container */
-            gap: 20px;
-            /* Adds spacing between items */
-            padding: 20px;
-            /* Adds space around the container */
-            background: #f9f9f9;
-            /* Light background for contrast */
-        }
-
-        .process-item {
-            text-align: center;
-            background: #fff;
-            /* White background for each item */
-            border-radius: 10px;
-            /* Rounded corners */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            /* Subtle shadow */
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            /* Smooth hover effects */
-            padding: 20px;
-            width: 280px;
-            max-width: 100%;
-        }
-
-        .process-item:hover {
-            transform: translateY(-10px);
-            /* Slightly elevates on hover */
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-            /* Stronger shadow on hover */
-        }
-
-        .process-image {
-            width: 100%;
-            height: auto;
-            /* Keeps aspect ratio intact */
-            border-radius: 10px;
-            /* Matches the container's rounded corners */
-            margin-bottom: 15px;
-            /* Space between image and text */
-        }
-
-        .process-step {
-            font-size: 18px;
-            font-weight: 500;
-            color: #333;
-            margin-top: 10px;
-            line-height: 1.4;
-            /* Improves readability */
-        }
-
-        .sec-title .title {
-            font-size: 28px;
-            font-weight: 700;
-            color: #222;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            /* Makes the title stand out */
-            position: relative;
-        }
-
-        .sec-title .title::after {
-            content: "";
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: #ff5733;
-            /* Accent color */
-            margin: 10px auto 0;
-        }
-
-        @media (max-width: 768px) {
-            .process-container {
-                gap: 15px;
-            }
-
-            .process-item {
-                width: 100%;
-                /* Full width for smaller screens */
-            }
-        }
+       
     </style>
 
 </head>
+
 <body>
-  <section class="top-bar-style2">
-    <div class="top-style2 clearfix">
-        <div class="top-style2-left">
-            <p><span class="icon-music"></span>We have Answers</p>
-            <ul>
-                <li>+91- 8408886616</li>
-                <li>info@steelaxinterio.com</li>
-                <!--<li>Mon - Sat: 9am to 6pm</li>-->
-            </ul>
-        </div>
-        <div class="top-style2-right">
-            <ul class="top-right-menu">
-                <!--<li><a href="#">Media</a></li>-->
-                <!--<li><a href="#">360O View</a></li>-->
-                <!--<li><a href="#">FAQ</a></li>-->
-            </ul>
-            <ul class="topbar-social-links">
-                <li>
-                    <a href="https://www.facebook.com/Steelax.in/"><i class="fa-brands fa-facebook fa-2x"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/steelaxinterio/?hl=en"><i
-                            class="fa-brands fa-instagram fa-2x"></i></a>
-                </li>
-                <!--<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>-->
-                <!--<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>-->
-            </ul>
-        </div>
+    <!-- <script>
+        $(document).ready(function () {
+            $('#exampleModalCenter').modal('show');
+        });
+    </script> -->
+    
+    
+    <div class="boxed_wrapper">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" style="margin-top: 50px;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+               
+                 
+                  <button type="button" style="margin-right: -400px; " class="close mt-4" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" >&times;</span>
+                  </button>
+               
+                  <div class="modal-body" style="margin-top: 10px;">
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="contact-details-form-box">
+                            <div class="title-box" style="margin-top: -70px;">
+                                <h4>Request for<br> Approximate Estimation</h4>
+                            </div>
+                            <div class="contact-details-box" style="margin-right: -57px;">
+                                <form class="contact-details-form">
+                                    <div class="row">
+                                        <div class="col-xl-6">
+                                            <div class="single-box">
+                                                <input type="text" name="form_name" value="" placeholder="Name" required="">
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-6">
+                                            <div class="single-box">
+                                                <input type="text" name="form_number" value="" placeholder="Phone No." required="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="single-box">
+                                                <select class="selectpicker" data-width="100%">
+                                                <option selected="selected">Select Your Service</option>
+                                                <option>Concept Designs</option>
+                                                <option>Project Designs</option>
+                                                <option>Make Overs</option>
+                                                <option>Consulting</option>
+                                                <option>Glass & Wrought</option>
+                                                <option>Space Planning</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="single-box">
+                                                <textarea name="form_request" placeholder="Special Request" required=""></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-12">
+                                            <div class="single-box">
+                                                <button class="btn-one" type="submit" data-dismiss="modal">Send Request<span class="flaticon-next"></span></button>
+                                               
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+        <!-- Start Top Bar style2 -->
+        <section class="top-bar-style2">
+            <div class="top-style2 clearfix">
+                <div class="top-style2-left">
+                    <p><span class="icon-music"></span>We have Answers</p>
+                    <ul>
+                        <li>+91- 8408886616</li>
+                        <li>info@steelaxinterio.com</li>
+                        <!--<li>Mon - Sat: 9am to 6pm</li>-->
+                    </ul>
+                </div>
+                <div class="top-style2-right">
+                    <ul class="top-right-menu">
+                        <!--<li><a href="#">Media</a></li>-->
+                        <!--<li><a href="#">360O View</a></li>-->
+                        <!--<li><a href="#">FAQ</a></li>-->
+                    </ul>
+                    <ul class="topbar-social-links">
+                        <li>
+                            <a href="https://www.facebook.com/Steelax.in/"><i class="fa-brands fa-facebook fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/steelaxinterio/?hl=en"><i
+                                    class="fa-brands fa-instagram fa-2x"></i></a>
+                        </li>
+                        <!--<li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>-->
+                        <!--<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>-->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- End Top Bar style2 -->
+
+
+        <!--Start Main Header-->
+        <header class="main-header header-style2 stricky">
+            <div class="inner-container clearfix">
+                <div class="logo-box-style2 float-left">
+                    <a href="index.html">
+                        <img src="images/resources/logo.png" alt="Awesome Logo" />
+                    </a>
+                </div>
+                <div class="main-menu-box float-right">
+                    <nav class="main-menu style2 clearfix">
+                        <div class="navbar-header clearfix">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class=""><a href="index.html">Home</a></li>
+                                <li class=""><a href="about.html">About Us</a></li>
+                                <li class="dropdown">
+                                    <a href="services.html">Products</a>
+                                    <!-- <ul>
+                                        <li><a href="services.html">View All Services</a></li>
+                                        <li><a href="ser-concept-designs.html">Concept Designs</a></li>
+                                        <li><a href="ser-project-designs.html">Project Designs</a></li>
+                                        <li><a href="ser-make-overs.html">Make Overs</a></li>
+                                        <li><a href="ser-consulting.html">Consulting</a></li>
+                                        <li><a href="ser-glass-wrought.html">Glass & Wrought</a></li>
+                                        <li><a href="ser-space-planning.html">Space Planning</a></li>
+                                    </ul> -->
+                                </li>
+                                
+                                <li class="dropdown"><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li class="current"><a href="terms.html" >T&C</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="mainmenu-right style2">
+                        <div class="button">
+                            <button type="button" class="btn-one" data-toggle="modal" data-target="#exampleModalCenter">
+                                Get a Quote<span class="flaticon-next"></span>
+                            </button>
+                        </div>
+                        <!-- Button trigger modal -->
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Main Header-->
+
+        <!--Main Slider-->
+        
+        <!--End Main Slider-->
+
+        <!-- add usp here -->
+
+
+        <h1>T&C</h1>
+
+        <!--Start About Style2 Area-->
+        
+        <!--End About Style2 Area-->
+
+        <!--Start Working style2 Area-->
+        
+
+        <!--End Working style2 Area-->
+
+        <!--our process starts-->
+        
+
+
+
+
+
+        <!--our process end-->
+
+
+        <!--Start Recently Project style2 Area-->
+        
+        <!--End Recently Project style2 Area-->
+
+        <!--Start Working Process Style2 Area-->
+        
+
+        <!--End Testimonial Style2 Area-->
+
+        <!--Start latest blog area style2-->
+        <!--<section class="latest-blog-area style2">-->
+        <!--    <div class="container inner-content">-->
+        <!--        <div class="row">-->
+        <!--            <div class="col-xl-12">-->
+        <!--                <div class="sec-title float-left">-->
+        <!-- <p>News & Updates</p> -->
+        <!--                    <div class="title">Our <span>Expertise</span></div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="row">-->
+        <!--Start single blog post-->
+        <!--            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">-->
+        <!--                <div class="single-blog-post wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">-->
+        <!--                    <div class="img-holder">-->
+        <!--                        <img src="images/steelax/2.webp" alt="Awesome Image" />-->
+        <!--                        <div class="overlay-style-two"></div>-->
+        <!--                        <div class="overlay">-->
+        <!--                            <div class="box">-->
+        <!--                                <div class="link-icon">-->
+        <!--                                    <a><span class="flaticon-zoom"></span></a>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                    <div class="text-holder">-->
+
+        <!--                        <div class="text">-->
+        <!--                            <p>-->
+        <!--                                Our Manufacturing unit ensure to deliver efficient quality products by using the latest tools to create the ideal space form our customers. we also have in house installation team that makes assembling hassle free for our customers.-->
+        <!--                            </p>-->
+
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--End single blog post-->
+        <!--Start single blog post-->
+        <!--            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">-->
+        <!--                <div class="single-blog-post wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">-->
+        <!--                    <div class="img-holder">-->
+        <!--                        <img src="images/steelax/8.jpg" alt="Awesome Image" />-->
+        <!--                        <div class="overlay-style-two"></div>-->
+        <!--                        <div class="overlay">-->
+        <!--                            <div class="box">-->
+        <!--                                <div class="link-icon">-->
+        <!--                                    <a><span class="flaticon-zoom"></span></a>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                    <div class="text-holder">-->
+        <!-- <div class="post-date">
+                                    <h3>24 <span>Feb 2019</span></h3>-->
+        <!--                            </div>-->
+        <!--                            <div class="meta-box">-->
+        <!--                                <ul class="meta-info">-->
+        <!--                                    <li>By <a href="#">Mark Richrdson</a></li>-->
+        <!--                                    <li>In <a href="#">Modern Paint</a></li>-->
+        <!--                                </ul>-->
+        <!--                            </div> -->
+        <!-- <h3 class="blog-title"><a href="blog-single.html">Commercial design for project</a></h3> -->
+        <!--                        <div class="text">-->
+        <!--                            <p>-->
+        <!--                                we have extraordinary team in our paint department. they use excellent quality high gloss PU paint of axalta company to give exceptional finish to our products.-->
+        <!--                            </p>-->
+        <!-- <a class="btn-two" href="#">Read More<span class="flaticon-next"></span></a> -->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--End single blog post-->
+        <!--Start single blog post-->
+        <!--            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">-->
+        <!--                <div class="single-blog-post wow fadeInLeft" data-wow-delay="400ms" data-wow-duration="1500ms">-->
+        <!--                    <div class="img-holder">-->
+        <!--                        <img src="images/steelax/9.jpg" alt="Awesome Image" />-->
+        <!--                        <div class="overlay-style-two"></div>-->
+        <!--                        <div class="overlay">-->
+        <!--                            <div class="box">-->
+        <!--                                <div class="link-icon">-->
+        <!--                                    <a><span class="flaticon-zoom"></span></a>-->
+        <!--                                </div>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                    <div class="text-holder">-->
+        <!-- <h3 class="blog-title"><a href="blog-single.html">Our interior design prediction 2019</a></h3> -->
+        <!--                        <div class="text">-->
+        <!--                            <p>-->
+        <!--                                We have the most experience & expert in house designing team. Who are specialize in custom designing and in creating one of kind product designs for our customers.-->
+        <!--                            </p>-->
+        <!-- <a class="btn-two" href="#">Read More<span class="flaticon-next"></span></a> -->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--End single blog post-->
+        <!--        </div>-->
+        <!--    </div>-->
+        <!--</section>-->
+        <!--End latest blog area style2-->
+
+        <!--Start Brand area style2-->
+        <section class="brand-area style2">
+            <div class="container">
+                <div class="sec-title text-center">
+                    <!-- <p>Corporate Clients</p> -->
+                    <div class="title">Our Working Partner</div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <ul>
+                            <!--Start Single Brand Item-->
+                            <li class="single-brand-item style2 wow fadeInUp" data-wow-delay="0ms"
+                                data-wow-duration="1500ms">
+                                <a href="#"><img src="images/steelax/jindal.png" alt="Awesome Brand Image" /></a>
+                                <!-- <div class="overlay-content">
+                                   
+                                </div> -->
+                            </li>
+                            <!--End Single Brand Item-->
+                            <!--Start Single Brand Item-->
+                            <li class="single-brand-item style2 wow fadeInUp" data-wow-delay="200ms"
+                                data-wow-duration="1500ms">
+                                <a href="#"><img src="images/steelax/axalta.png" alt="Awesome Brand Image" /></a>
+                                <!-- <div class="overlay-content">
+                                    <p>Miesian</p>
+                                </div> -->
+                            </li>
+                            <!--End Single Brand Item-->
+                            <!--Start Single Brand Item-->
+                            <li class="single-brand-item style2 wow fadeInUp" data-wow-delay="400ms"
+                                data-wow-duration="1500ms">
+                                <a href="#"><img src="images/steelax/hafele.png" alt="Awesome Brand Image" /></a>
+                                <!-- <div class="overlay-content">
+                                    <p>Miesian</p>
+                                </div> -->
+                            </li>
+                            <!--End Single Brand Item-->
+                            <!--Start Single Brand Item-->
+                            <li class="single-brand-item style2 wow fadeInUp" data-wow-delay="600ms"
+                                data-wow-duration="1500ms">
+                                <a href="#"><img src="images/steelax/laranza.png" alt="Awesome Brand Image" /></a>
+                                <!-- <div class="overlay-content">
+                                    <p>Miesian</p>
+                                </div> -->
+                            </li>
+                            <!--End Single Brand Item-->
+                            <!--Start Single Brand Item-->
+                            <li class="single-brand-item style2 wow fadeInUp" data-wow-delay="800ms"
+                                data-wow-duration="1500ms">
+                                <a href="#"><img src="images/steelax/hittch.png" alt="Awesome Brand Image" /></a>
+                                <!-- <div class="overlay-content">
+                                    <p>Miesian</p>
+                                </div> -->
+                            </li>
+                            <!--End Single Brand Item-->
+                            <!--Start Single Brand Item-->
+                            <!-- <li class="single-brand-item style2 wow fadeInUp" data-wow-delay="800ms" data-wow-duration="1500ms">
+                                <a href="#"><img src="images/brand/6.png" alt="Awesome Brand Image"></a>
+                                <div class="overlay-content">
+                                    <p>Miesian</p>
+                                </div>
+                            </li> -->
+                            <!--End Single Brand Item-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Brand area style2-->
+
+        <!--Start Instagram Area-->
+        <!-- <section class="instagram-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="instagram-title">
+                            <div class="pattern-bg wow slideInLeft" data-wow-delay="100ms" data-wow-duration="1500ms"></div>
+                            <h3>Looking for interior inspiration?<br> for your place.</h3>
+                            <a class="btn-two" href="blog.html">Follous Us On Instagram<span class="flaticon-next"></span></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <ul class="instagram-items clearfix">
+                            <li>
+                                <div class="img-holder">
+                                    <img src="images/resources/instagram-1.jpg" alt="Awesome Image">
+                                    <div class="overlay-style-two"></div>
+                                    <div class="overlay">
+                                        <div class="box">
+                                            <div class="link-icon">
+                                                <a href="#"><span class="icon-instagram"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-holder">
+                                    <img src="images/resources/instagram-2.jpg" alt="Awesome Image">
+                                    <div class="overlay-style-two"></div>
+                                    <div class="overlay">
+                                        <div class="box">
+                                            <div class="link-icon">
+                                                <a href="#"><span class="icon-instagram"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-holder">
+                                    <img src="images/resources/instagram-3.jpg" alt="Awesome Image">
+                                    <div class="overlay-style-two"></div>
+                                    <div class="overlay">
+                                        <div class="box">
+                                            <div class="link-icon">
+                                                <a href="#"><span class="icon-instagram"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-holder">
+                                    <img src="images/resources/instagram-4.jpg" alt="Awesome Image">
+                                    <div class="overlay-style-two"></div>
+                                    <div class="overlay">
+                                        <div class="box">
+                                            <div class="link-icon">
+                                                <a href="#"><span class="icon-instagram"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-holder">
+                                    <img src="images/resources/instagram-5.jpg" alt="Awesome Image">
+                                    <div class="overlay-style-two"></div>
+                                    <div class="overlay">
+                                        <div class="box">
+                                            <div class="link-icon">
+                                                <a href="#"><span class="icon-instagram"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-holder">
+                                    <img src="images/resources/instagram-6.jpg" alt="Awesome Image">
+                                    <div class="overlay-style-two"></div>
+                                    <div class="overlay">
+                                        <div class="box">
+                                            <div class="link-icon">
+                                                <a href="#"><span class="icon-instagram"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!--End Instagram Area-->
+
+        <!--Start Contact details Area-->
+        <section class="contact-details-area">
+            <div class="sec-title text-center">
+                <p>Contact Details</p>
+                <div class="title clr-white">How Can We <span>Help You?</span></div>
+            </div>
+            <div class="parallax-background" style="
+            background-image: url(images/parallax-background/contact-details-bg.jpg);
+          "></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="contact-details-content">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="content-info-box" style="background-image: url(images/steelax/9.jpg)">
+                                        <div class="inner-content">
+                                            <div class="inner">
+                                                <div class="single-info-box wow fadeInDown" data-wow-delay="100ms"
+                                                    data-wow-duration="1200ms">
+                                                    <div class="icon">
+                                                        <span class="icon-global"></span>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h3>Visit Our Office</h3>
+                                                        <p>
+                                                            First Floor, Plot No.2 Vikalp Khand, Gomti Nagar, Lucknow-
+                                                            226010
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="single-info-box white-bg wow fadeInUp"
+                                                    data-wow-delay="100ms" data-wow-duration="1200ms">
+                                                    <div class="icon">
+                                                        <span class="icon-global"></span>
+                                                    </div>
+                                                    <div class="text">
+                                                        <h3>Visit Our Office</h3>
+                                                        <p>
+                                                            First Floor, Plot No.2 Vikalp Khand, Gomti Nagar, Lucknow-
+                                                            226010
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="contact-details-form-box">
+                                        <div class="title-box">
+                                            <h2>
+                                                Request for<br />
+                                                Approximate Estimation
+                                            </h2>
+                                        </div>
+                                        <div class="contact-details-box">
+                                            <form class="contact-details-form">
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <div class="single-box">
+                                                            <input type="text" name="form_name" value=""
+                                                                placeholder="Name" required="" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <div class="single-box">
+                                                            <input type="email" name="form_email" value=""
+                                                                placeholder="Email" required="" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <div class="single-box">
+                                                            <select class="selectpicker" data-width="100%">
+                                                                <option selected="selected">
+                                                                    Select Your Service
+                                                                </option>
+                                                                <option>Concept Designs</option>
+                                                                <option>Project Designs</option>
+                                                                <option>Make Overs</option>
+                                                                <option>Consulting</option>
+                                                                <option>Glass & Wrought</option>
+                                                                <option>Space Planning</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <div class="single-box">
+                                                            <textarea name="form_request" placeholder="Special Request"
+                                                                required=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xl-12">
+                                                        <div class="single-box">
+                                                            <button class="btn-one" type="submit">
+                                                                Send Request<span class="flaticon-next"></span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Contact details Area-->
+
+        <!--Start footer area Style4-->
+        <footer class="footer-area style4" style="margin-top: 50px;">
+            <div class="container">
+                <div class="row">
+                    <!--Start single footer widget-->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="single-footer-widget marbtm50-s4">
+                            <div class="our-info-box">
+                                <div class="footer-logo">
+                                    <a href="index.html">
+                                        <img src="images/resources/logo.png" alt="Awesome Logo" />
+                                    </a>
+                                </div>
+                                <div class="text">
+                                    <p>
+                                        We are one of the leading manufacturing companies of Stainless Steel Modular
+                                        kitchens and Portable Steel Wardrobes. Managed by @akestechinfotech
+                                    </p>
+                                </div>
+                                <div class="follow-us-social-links clearfix">
+                                    <span>Follw Us On:</span>
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/Steelax.in/"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                                        <li><a href="https://www.instagram.com/steelaxinterio/?hl=en"><i
+                                            class="fa-brands fa-instagram fa-2x"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+                    <!--Start single footer widget-->
+                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
+                        <div class="single-footer-widget s4">
+                            <div class="title-style2">
+                                <h3>Usefull Links</h3>
+                            </div>
+                            <div class="usefull-links">
+                                <ul class="float-left">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="services.html">Services</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li><a href="gallery.html">Gallery</a></li>
+                                </ul>
+                                <ul class="float-left borders-left">
+
+
+
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="terms.html">Terms and Conditions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+                    <!--Start single footer widget-->
+                    <div class="col-xl-4 col-lg-3 col-md-12 col-sm-12">
+                        <div class="single-footer-widget pdtop50-s4">
+                            <div class="title-style2">
+                                <h3>Subscribe Us</h3>
+                            </div>
+                            <div class="subscribe-box">
+                                <form class="subscribe-form" action="#">
+                                    <input type="email" name="email" placeholder="Your Email" />
+                                    <button class="btn-one" type="submit">
+                                        Subscribe<span class="flaticon-next"></span>
+                                    </button>
+                                </form>
+                                <div class="text">
+                                    <p>
+                                        <span>*</span>Subscribe us and get latest news and updates
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single footer widget-->
+                </div>
+            </div>
+        </footer>
+        <!--End footer area style4-->
+
+        <!--Start Footer Contact Info Area-->
+        <section class="footer-contact-info-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <ul class="footer-contact-info clearfix">
+                            <li>
+                                <div class="single-footer-contact-info">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-global"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>
+                                                First Floor, Plot No.2 Vikalp Khand, Gomti Nagar,
+                                                <br /> Lucknow- 226010
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-footer-contact-info">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-support1"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>
+                                                +91 8408886616
+                                                <br />
+                                                <span>Mon - Friday:</span> 9.00am to 6.00pm
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="single-footer-contact-info">
+                                    <div class="inner">
+                                        <div class="icon">
+                                            <span class="icon-shipping-and-delivery"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Info@steelaxinterio.co.in</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Footer Contact Info Area-->
+
+        <!--Start footer bottom area-->
+        <section class="footer-bottom-area style3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="copyright-text text-center">
+                            <p>
+                                © 2023 Designed By <a href="#">Akestech Infotech Pvt. Ltd.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End footer bottom area-->
     </div>
-</section>
-<header class="main-header header-style2 stricky">
-  <div class="inner-container clearfix">
-      <div class="logo-box-style2 float-left">
-          <a href="index.html">
-              <img src="images/resources/logo.png" alt="Awesome Logo" />
-          </a>
-      </div>
-      <div class="main-menu-box float-right">
-          <nav class="main-menu style2 clearfix">
-              <div class="navbar-header clearfix">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse"
-                      data-target=".navbar-collapse">
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                  </button>
-              </div>
-              <div class="navbar-collapse collapse clearfix">
-                  <ul class="navigation clearfix">
-                      <li class=""><a href="index.html">Home</a></li>
-                      <li class=""><a href="about.html">About Us</a></li>
-                      <li class="dropdown">
-                          <a href="services.html">Products</a>
-                          <!-- <ul>
-                              <li><a href="services.html">View All Services</a></li>
-                              <li><a href="ser-concept-designs.html">Concept Designs</a></li>
-                              <li><a href="ser-project-designs.html">Project Designs</a></li>
-                              <li><a href="ser-make-overs.html">Make Overs</a></li>
-                              <li><a href="ser-consulting.html">Consulting</a></li>
-                              <li><a href="ser-glass-wrought.html">Glass & Wrought</a></li>
-                              <li><a href="ser-space-planning.html">Space Planning</a></li>
-                          </ul> -->
-                      </li>
-                      <li class="dropdown"><a href="gallery.html">Gallery</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                      <li class="current"><a href="terms.html">T&C</a></li>
-                  </ul>
-              </div>
-          </nav>
-          <div class="mainmenu-right style2">
-              <div class="button">
-                  <button type="button" class="btn-one" data-toggle="modal" data-target="#exampleModalCenter">
-                      Get a Quote<span class="flaticon-next"></span>
-                  </button>
-              </div>
-              <!-- Button trigger modal -->
-          </div>
-      </div>
-  </div>
-</header>
-<h1>Terms and Conditions</h1>
-<footer class="footer-area style4" style="margin-top: 50px;">
-  <div class="container">
-      <div class="row">
-          <!--Start single footer widget-->
-          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-              <div class="single-footer-widget marbtm50-s4">
-                  <div class="our-info-box">
-                      <div class="footer-logo">
-                          <a href="index.html">
-                              <img src="images/resources/logo.png" alt="Awesome Logo" />
-                          </a>
-                      </div>
-                      <div class="text">
-                          <p>
-                              We are one of the leading manufacturing companies of Stainless Steel Modular
-                              kitchens and Portable Steel Wardrobes. Managed by @akestechinfotech
-                          </p>
-                      </div>
-                      <div class="follow-us-social-links clearfix">
-                          <span>Follw Us On:</span>
-                          <ul>
-                              <li><a href="https://www.facebook.com/Steelax.in/"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
-                              <li><a href="https://www.instagram.com/steelaxinterio/?hl=en"><i
-                                  class="fa-brands fa-instagram fa-2x"></i></li>
-                          </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!--End single footer widget-->
-          <!--Start single footer widget-->
-          <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
-              <div class="single-footer-widget s4">
-                  <div class="title-style2">
-                      <h3>Usefull Links</h3>
-                  </div>
-                  <div class="usefull-links">
-                      <ul class="float-left">
-                          <li><a href="index.html">Home</a></li>
-                          <li><a href="services.html">Products</a></li>
-                          <li><a href="about.html">About</a></li>
-                          <li><a href="gallery.html">Gallery</a></li>
-                      </ul>
-                      <ul class="float-left borders-left">
 
+    <div class="scroll-to-top scroll-to-target" data-target="html">
+        <span class="fa fa-angle-up"></span>
+    </div>
 
+    <script src="js/jquery.js"></script>
+    <script src="js/appear.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/jquery.bootstrap-touchspin.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    <script src="js/jquery.paroller.min.js"></script>
+    <script src="js/owl.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/map-helper.js"></script>
 
-                          <li><a href="contact.html">Contact Us</a></li>
-                          <li><a href="terms.html">Terms and Conditions</a></li>
-                      </ul>
-                  </div>
-              </div>
-          </div>
-          <!--End single footer widget-->
-          <!--Start single footer widget-->
-          <div class="col-xl-4 col-lg-3 col-md-12 col-sm-12">
-              <div class="single-footer-widget pdtop50-s4">
-                  <div class="title-style2">
-                      <h3>Subscribe Us</h3>
-                  </div>
-                  <div class="subscribe-box">
-                      <form class="subscribe-form" action="#">
-                          <input type="email" name="email" placeholder="Your Email" />
-                          <button class="btn-one" type="submit">
-                              Subscribe<span class="flaticon-next"></span>
-                          </button>
-                      </form>
-                      <div class="text">
-                          <p>
-                              <span>*</span>Subscribe us and get latest news and updates
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!--End single footer widget-->
-      </div>
-  </div>
-</footer>
+    <script src="assets/language-switcher/jquery.polyglot.language.switcher.js"></script>
+    <script src="assets/timepicker/timePicker.js"></script>
+    <script src="assets/html5lightbox/html5lightbox.js"></script>
+
+    <!--Revolution Slider-->
+    <script src="plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="js/main-slider-script.js"></script>
+
+    <!-- thm custom script -->
+    <script src="js/custom.js"></script>
 </body>
+
 </html>
