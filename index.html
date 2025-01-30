@@ -50,7 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-     /* Background color to handle gaps */
+    background-color: white; /* Background color to handle gaps */
 }
 
 /* Image Styling */
@@ -62,22 +62,20 @@
     border: 2px solid white; /* Adds a border to all images */
     transition: transform 0.3s ease;
 }
-.usp1{
-    padding:10px;
+
+.usp1 {
+    padding: 10px;
 }
-.usp3{
-    padding:8px;
+
+.usp3 {
+    padding: 8px;
 }
 
 /* Hover Effect - Desktop Only */
 @media (min-width: 769px) {
     .usp-item img:hover {
         transform: scale(1.05);
-        
     }
-    .usp3{
-    padding:8px;
-}
 }
 
 /* Mobile Layout - Display 2 images at a time with slide effect */
@@ -89,9 +87,6 @@
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
     }
-    .usp3{
-    padding:8px;
-}
 
     .usp-item {
         flex: 0 0 48%; /* Show 2 images at a time */
@@ -115,7 +110,6 @@
         transform: none;
     }
 }
-
 
         /* Main container for process flow */
         .process-container {
