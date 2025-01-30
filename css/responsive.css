@@ -180,6 +180,7 @@
 ***/     
 .top-bar-style2 {
     padding: 20px 20px;
+    
 }    
 .top-style2-left {
     overflow: hidden;
@@ -829,7 +830,7 @@ li .single-footer-contact-info .text p br{
 =============================================
 ***/     
 .top-bar-style2 {
-    padding: 20px 20px;
+    /* padding: 20px 20px; */
 }    
 .top-style2-left {
     overflow: hidden;
@@ -848,8 +849,8 @@ li .single-footer-contact-info .text p br{
 .top-style2-left ul li {
     display: inline-block;
     float: none;
-    padding-right: 16px;
-    margin-right: 15px;
+    /* padding-right: 16px;
+    margin-right: 15px; */
 } 
     
 .top-style2-right {
@@ -933,9 +934,12 @@ li .single-footer-contact-info .text p br{
 =============================================
     About Style2 Area style
 =============================================
-***/     
+***/  
+/* .about-style2-area{
+    padding:0px;
+}    */
 .about-style2-image-box {
-    margin-top: 170px;
+    margin-top: 1px;
 }    
 .about-style2-image-box .pattern {
     top: -110px;
@@ -1604,7 +1608,19 @@ li .single-footer-contact-info .inner {
     margin: 0;
     padding-bottom: 52px;
 }  
-    
+.recently-project-style2-area {
+    position: relative;
+    display: block;
+    padding-bottom: 1px !important;
+    padding-top: 1px !important;
+}  
+.recently-project-style2-area .sec-title{
+    padding:10px;
+}
+.recently-project-style2-area .sec-title .title{
+    margin-bottom:5px;
+}
+
 /*** 
 =============================================
     Slogan Area style
@@ -1622,16 +1638,23 @@ li .single-footer-contact-info .inner {
 =============================================
     Testimonial Area style
 =============================================
-***/     
+***/   
+.testimonial-style2-area{
+    padding: 20px 0 11px ;
+}  
+.testimonial-style2-area .sec-title{
+    padding-bottom: 1px;
+}
 .testimonial-area .sec-title {
-    padding-bottom: 24px;
+    padding-bottom: 1px;
     float: none !important;
 }    
 .more-reviews-button {
     float: none !important;
     margin: 0;
-    padding-bottom: 52px;
+    padding-bottom: 0px;
 }  
+
     
 /*** 
 =============================================
@@ -1695,7 +1718,7 @@ li .single-footer-contact-info .inner {
 =============================================
 ***/     
 .top-bar-style2 {
-    padding: 20px 20px;
+    padding:20px 20px;
 }    
 .top-style2-left {
     overflow: hidden;
@@ -1753,7 +1776,7 @@ li .single-footer-contact-info .inner {
 .top-style2-right .topbar-social-links li {
     float: none;
     padding-right: 0;
-    margin: 0 13px;
+    margin: 0 10px;
 }    
    
 /*** 
@@ -1801,7 +1824,7 @@ li .single-footer-contact-info .inner {
 =============================================
 ***/     
 .about-style2-image-box {
-    margin-top: 170px;
+    /* margin-top: 170px; */
 }    
 .about-style2-image-box .pattern {
     top: -110px;
@@ -1809,7 +1832,7 @@ li .single-footer-contact-info .inner {
     right: 0;
     bottom: -110px;
     width: 100%;
-    height: auto;
+    height: 0;
 }    
 .about-style2-text .authorised-info .signature, 
 .about-style2-text .authorised-info .name {
@@ -1838,7 +1861,19 @@ li .single-footer-contact-info .inner {
 .about-style2-image-box .overlay-box .button a span:before {
     margin: 0 auto;
 }    
-    
+.about-style2-text .sec-title {
+    padding-bottom: 1px;
+}
+.about-style2-text .sec-title p{
+    margin: 0 0 1px;
+}
+.about-style2-text .text {
+    position: relative;
+    display: block;
+    border-top: 1px dashed #cccccc;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}  
 /*** 
 =============================================
     Working Style2 Area style
@@ -1894,13 +1929,27 @@ li .single-footer-contact-info .inner {
 =============================================
 ***/      
 .working-process-style2-area .sec-title {
-    padding-bottom: 125px;
+    /* padding-bottom: 125px; */
 }    
+.about-style2-text .text {
+    position: relative;
+    display: block;
+    border-top: 1px dashed #cccccc;  
+}
+.working-process-style2-area{
+    position: relative;
+    display: block;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
 .working-process-carousel.owl-carousel .owl-nav {
     position: absolute;
     left: 0;
     right: auto;
-    top: -95px;
+    /* top: -95px; */
 }    
 .single-working-process-style2 {
     max-width: 330px;
@@ -1930,11 +1979,11 @@ li .single-footer-contact-info .inner {
 =============================================
 ***/ 
 .brand-area.style2 {
-    padding-top: 110px;
-    padding-bottom: 80px;
+    padding-top: 1px;
+    padding-bottom: 8px;
 }    
 .brand-area.style2 .sec-title {
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }    
 .single-brand-item.style2 {
     max-width: 290px;

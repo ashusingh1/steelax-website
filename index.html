@@ -21,63 +21,100 @@
     <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
 
     <style>
-        /* Container for USP items */
-        .usp-container {
-            display: flex;
-            /* Arranges items in a row */
-            justify-content: space-between;
-            /* Distributes items evenly */
-            flex-wrap: wrap;
-            /* Allows wrapping for smaller screens */
-            margin: 20px auto;
-            /* Centers the container horizontally */
-            width: 80%;
-            /* Adjust width as needed */
-            gap: 20px;
-            /* Adds spacing between items */
-        }
 
-        /* Individual USP item styling */
-        .usp-item {
-            text-align: center;
-            /* Centers text below image */
-            margin: 10px;
-            flex: 1 1 calc(20% - 40px);
-            /* Makes items responsive and evenly distributed */
-            max-width: 170px;
-            /* Optional: prevents items from stretching too wide */
-        }
 
-        /* Image styling for consistency */
-        .usp-item img {
-            width: 100%;
-            /* Ensures the image adapts to the container width */
-            max-width: 170px;
-            /* Limits maximum width */
-            height: 150px;
-            /* Sets a consistent height */
-            object-fit: cover;
-            /* Ensures the image fills the area without distortion */
-            border-radius: 10px;
-            /* Optional: adds rounded corners */
-            /* Adds a subtle shadow for design consistency */
-            transition: transform 0.3s ease;
-            /* Smooth zoom effect on hover */
-        }
+/* USP Container */
+.usp-container {
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+}
 
-        /* Text styling */
-        .usp-item p {
-            margin-top: 10px;
-            font-size: 14px;
-            font-weight: 500;
-            color: #333;
-        }
+/* USP Wrapper */
+.usp-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
 
-        /* Hover effect for images */
-        .usp-item img:hover {
-            transform: scale(1.05);
-            /* Zoom effect on hover */
-        }
+/* USP Item */
+.usp-item {
+    text-align: center;
+    flex: 1 1 calc(20% - 20px); /* Each item takes equal space */
+    max-width: 170px;
+    height: 170px; /* Ensure all images are equal in size */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     /* Background color to handle gaps */
+}
+
+/* Image Styling */
+.usp-item img {
+    width: 100%; /* Adjusts to container */
+    height: 100%; /* Ensures uniform height */
+    object-fit: cover; /* Ensures images fit without distortion */
+    border-radius: 10px; /* Ensures consistent rounded corners */
+    border: 2px solid white; /* Adds a border to all images */
+    transition: transform 0.3s ease;
+}
+.usp1{
+    padding:10px;
+}
+.usp3{
+    padding:8px;
+}
+
+/* Hover Effect - Desktop Only */
+@media (min-width: 769px) {
+    .usp-item img:hover {
+        transform: scale(1.05);
+        
+    }
+    .usp3{
+    padding:8px;
+}
+}
+
+/* Mobile Layout - Display 2 images at a time with slide effect */
+@media (max-width: 768px) {
+    .usp-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+    .usp3{
+    padding:8px;
+}
+
+    .usp-item {
+        flex: 0 0 48%; /* Show 2 images at a time */
+        max-width: 48%;
+        scroll-snap-align: start;
+        height: 150px; /* Fixed height for mobile */
+    }
+
+    .usp-container {
+        width: 90%;
+        overflow: hidden;
+    }
+
+    /* Hide Scrollbar for better UX */
+    .usp-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Disable hover effect on mobile */
+    .usp-item img:hover {
+        transform: none;
+    }
+}
 
 
         /* Main container for process flow */
@@ -345,7 +382,7 @@
                         <li data-description="Slide Description" data-easein="default" data-easeout="default"
                             data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade"
                             data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689"
-                            data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3=""
+                            data-masterspeed="500" data-param1="" data-param10="" data-param2="" data-param3=""
                             data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                             data-rotate="0" data-saveperformance="off" data-slotamount="default"
                             data-thumb="images/slides/v2-1.jpg" data-title="Slide Title"
@@ -355,7 +392,7 @@
                                 data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
                                 src="images/steelax/k1.jpg">
 
-                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            <!-- <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
                                 data-type="text" data-height="none" data-width="['800','800','700','400']"
                                 data-whitespace="normal" data-hoffset="['15','15','15','15']"
@@ -403,7 +440,7 @@
                                         <a class="slide-style2-button" href="#">More About Us</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
 
 
@@ -412,7 +449,7 @@
                         <li data-description="Slide Description" data-easein="default" data-easeout="default"
                             data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade"
                             data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687"
-                            data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3=""
+                            data-masterspeed="500" data-param1="" data-param10="" data-param2="" data-param3=""
                             data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                             data-rotate="0" data-saveperformance="off" data-slotamount="default"
                             data-thumb="images/slides/v2-2.jpg" data-title="Slide Title"
@@ -422,7 +459,7 @@
                                 data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
                                 src="images/steelax/k2.jpg">
 
-                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            <!-- <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
                                 data-type="text" data-height="none" data-width="['800','800','700','400']"
                                 data-whitespace="normal" data-hoffset="['15','15','15','15']"
@@ -470,14 +507,14 @@
                                         <a class="slide-style2-button" href="#">Services We Provide</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </li>
 
                         <li data-description="Slide Description" data-easein="default" data-easeout="default"
                             data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade"
                             data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688"
-                            data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3=""
+                            data-masterspeed="500" data-param1="" data-param10="" data-param2="" data-param3=""
                             data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9=""
                             data-rotate="0" data-saveperformance="off" data-slotamount="default"
                             data-thumb="images/slides/v2-3.jpg" data-title="Slide Title"
@@ -487,7 +524,7 @@
                                 data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina=""
                                 src="images/steelax/k3.jpg">
 
-                            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
+                            <!-- <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]"
                                 data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
                                 data-type="text" data-height="none" data-width="['800','800','700','400']"
                                 data-whitespace="normal" data-hoffset="['15','15','15','15']"
@@ -535,7 +572,7 @@
                                         <a class="slide-style2-button" href="#">View Our Projects</a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
 
 
@@ -550,27 +587,25 @@
 
 
         <div class="usp-container">
-            <div class="usp-item">
-                <img src="images/usp/1.jpg" alt="USP 1 Image">
-                <p>Lifetime Warranty</p>
-            </div>
-            <div class="usp-item">
-                <img src="images/usp/2.jpg" alt="USP 2 Image">
-                <p>Customized Design</p>
-            </div>
-            <div class="usp-item">
-                <img src="images/usp/3.jpg" alt="USP 3 Image">
-                <p>Zero maintenance</p>
-            </div>
-            <div class="usp-item">
-                <img src="images/usp/4.jpg" alt="USP 4 Image">
-                <p>100% Steel Products</p>
-            </div>
-            <div class="usp-item">
-                <img src="images/usp/5.jpg" alt="USP 5 Image">
-                <p>35+ Years of experience</p>
+            <div class="usp-wrapper">
+                <div class="usp-item">
+                    <img src="images/usp/1.jpg" alt="USP 1 Image" class="usp1">
+                </div>
+                <div class="usp-item">
+                    <img src="images/usp/2.jpg" alt="USP 2 Image">
+                </div>
+                <div class="usp-item">
+                    <img src="images/usp/3.jpg" alt="USP 3 Image" class="usp3">
+                </div>
+                <div class="usp-item">
+                    <img src="images/usp/4.jpg" alt="USP 4 Image">
+                </div>
+                <div class="usp-item">
+                    <img src="images/usp/5.jpg" alt="USP 5 Image">
+                </div>
             </div>
         </div>
+        
 
         <!--Start About Style2 Area-->
         <section class="about-style2-area">
@@ -615,7 +650,7 @@
                     </div>
                     <div class="col-xl-7">
                         <div class="about-style2-image-box">
-                            <div class="pattern wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"></div>
+                            <div class="pattern wow pattern wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"></div>
                             <div class="image">
                                 <img src="images/steelax/3.jpg" style="height: 600px;" alt="Awesome Image" />
                                 <div class="overlay-box">
@@ -785,7 +820,7 @@
         <!--Start Working Process Style2 Area-->
         <section class="working-process-style2-area" style="
           background-image: url(images/parallax-background/working-process-bg-style3.jpg);
-        ">
+         ">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5">
@@ -797,7 +832,7 @@
                                 </div>
                             </div>
                             <div class="text text-manufacturing">
-                                <p style="margin-top:10px;">
+                                <p>
 
                                     We specialize in crafting exceptional, long-lasting kitchens using only the finest
                                     materials. Our in-house manufacturing unit allows us to meticulously control
@@ -830,7 +865,7 @@
                         <div class="about-style2-image-box">
                             <div class="pattern wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"></div>
                             <div class="image">
-                                <img src="images/steelax/3.jpg" style="height: 600px;" alt="Awesome Image" />
+                                <img src="images/steelax/3.jpg" style="height: 500px;" alt="Awesome Image" />
                                 <div class="overlay-box">
                                     <div class="title">
                                         <h1>
@@ -871,10 +906,7 @@
                                     </div>
                                     <div class="text-box">
                                         <p>
-                                            I recently had a modular kitchen installed by Steelax interio, and I
-                                            am extremely satisfied with the quality of their work. The steel
-                                            cabinets are durable, sleek, and easy to maintain. Highly
-                                            recommended!
+                                            Their team customized every detail to fit my requirements perfectly. From storage options to layout, everything is just perfect.
                                         </p>
                                     </div>
                                     <div class="client-info">
@@ -887,7 +919,7 @@
                                                 <li><i class="fa fa-star"></i></li>
                                             </ul>
                                         </div>
-                                        <h3>Z. Gartrell Wright</h3>
+                                        <h3>Mahi Singh</h3>
                                     </div>
                                 </div>
                                 <div class="overlay-content">
@@ -912,7 +944,101 @@
                                                 <li><i class="fa fa-star"></i></li>
                                             </ul>
                                         </div>
-                                        <h3>Z. Gartrell Wright</h3>
+                                        <h3>Saurabh Pandey</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-testimonial-style2 text-center">
+                            <div class="inner-content">
+                                <div class="static-content">
+                                    <div class="quote-icon">
+                                        <span class="icon-quote3"></span>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>
+                                            From consultation to installation, the team was professional and efficient. They delivered exactly what I envisioned, and the result is a stunning and functional kitchen.
+                                        </p>
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="review-box">
+                                            <ul>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h3>Ashika Sharma</h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="quote-icon">
+                                        <span class="icon-quote3"></span>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>
+                                            I love my new steel modular kitchen! It's durable, easy to clean, and perfect for everyday use. The attention to detail is commendable.                                        </p>
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="review-box">
+                                            <ul>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h3>Ayushi Nigam</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-testimonial-style2 text-center">
+                            <div class="inner-content">
+                                <div class="static-content">
+                                    <div class="quote-icon">
+                                        <span class="icon-quote3"></span>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>
+                                            Steelax Interio offered creative design solutions tailored to my needs. The modular kitchen is both stylish and practical, with ample storage and a perfect layout.
+                                        </p>
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="review-box">
+                                            <ul>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h3>Surendra kumar</h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="quote-icon">
+                                        <span class="icon-quote3"></span>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>
+                                            I am very impressed with the quality of my  steel modular kitchen from Steelax Interio. The finish is perfect and the doors are very smooth. I would definitely recommend them to anyone looking for a new kitchen.                                        </p>
+                                    </div>
+                                    <div class="client-info">
+                                        <div class="review-box">
+                                            <ul>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            </ul>
+                                        </div>
+                                        <h3>Utkarsh Tiwari</h3>
                                     </div>
                                 </div>
                             </div>
@@ -982,7 +1108,7 @@
         <!--                    </div>-->
         <!--                    <div class="text-holder">-->
         <!-- <div class="post-date">
-    <!--                                <h3>24 <span>Feb 2019</span></h3>-->
+                                   <h3>24 <span>Feb 2019</span></h3>-->
         <!--                            </div>-->
         <!--                            <div class="meta-box">-->
         <!--                                <ul class="meta-info">-->
@@ -1319,7 +1445,7 @@
         <!--End Contact details Area-->
 
         <!--Start footer area Style4-->
-        <footer class="footer-area style4" style="margin-top: 50px;">
+        <footer class="footer-area style4">
             <div class="container">
                 <div class="row">
                     <!--Start single footer widget-->
@@ -1328,22 +1454,20 @@
                             <div class="our-info-box">
                                 <div class="footer-logo">
                                     <a href="index.html">
-                                        <img src="images/resources/logo.png" alt="Awesome Logo" />
+                                        <img src="images/resources/logo.png" alt="Awesome Logo">
                                     </a>
                                 </div>
                                 <div class="text">
-                                    <p>
-                                        We are one of the leading manufacturing companies of Stainless Steel Modular
-                                        kitchens and Portable Steel Wardrobes. Managed by @akestechinfotech
-                                    </p>
+                                    <p>We are one of the leading manufacturing companies of Stainless Steel Modular kitchens and Portable Steel Wardrobes.
+                                        Managed by @akestechinfotech</p>
                                 </div>
                                 <div class="follow-us-social-links clearfix">
-                                    <span>Follw Us On:</span>
+                                    <span>Follow Us On:</span>
                                     <ul>
                                         <li><a href="https://www.facebook.com/Steelax.in/"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
                                         <li><a href="https://www.instagram.com/steelaxinterio/?hl=en"><i
-                                            class="fa-brands fa-instagram fa-2x"></i></li>
-                                    </ul>
+                                            class="fa-brands fa-instagram fa-2x"></i></a></li>
+                                      </ul>
                                 </div>
                             </div>
                         </div>
@@ -1352,26 +1476,28 @@
                     <!--Start single footer widget-->
                     <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12">
                         <div class="single-footer-widget s4">
-                            <div class="title-style2">
-                                <h3>Usefull Links</h3>
-                            </div>
-                            <div class="usefull-links">
-                                <ul class="float-left">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                </ul>
-                                <ul class="float-left borders-left">
-
-
-
-                                    <li><a href="contact.html">Contact Us</a></li>
-                                    <li><a href="terms.html">Terms and Conditions</a></li>
-                                </ul>
-                            </div>
+                          <div class="title-style2">
+                            <h3>Usefull Links</h3>
+                          </div>
+                          <div class="usefull-links">
+                            <ul class="float-left">
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="services.html">Products</a></li>
+                              <li><a href="about.html">About</a></li>
+                              <li><a href="gallery.html">Gallery</a></li>
+                            </ul>
+                            <ul class="float-left borders-left">
+                              
+                           
+          
+                              <li><a href="contact.html">Contact Us</a></li>
+                              <li><a href="terms.html">Terms and Conditions</a></li>
+                              <li><a href="Privacy.html">Privacy and Policies</a></li>
+                                    <li><a href="warranty.html">Life Time Warranty</a></li>
+                            </ul>
+                          </div>
                         </div>
-                    </div>
+                      </div>
                     <!--End single footer widget-->
                     <!--Start single footer widget-->
                     <div class="col-xl-4 col-lg-3 col-md-12 col-sm-12">
@@ -1381,15 +1507,11 @@
                             </div>
                             <div class="subscribe-box">
                                 <form class="subscribe-form" action="#">
-                                    <input type="email" name="email" placeholder="Your Email" />
-                                    <button class="btn-one" type="submit">
-                                        Subscribe<span class="flaticon-next"></span>
-                                    </button>
+                                    <input type="email" name="email" placeholder="Your Email">
+                                    <button class="btn-one" type="submit">Subscribe<span class="flaticon-next"></span></button>
                                 </form>
                                 <div class="text">
-                                    <p>
-                                        <span>*</span>Subscribe us and get latest news and updates
-                                    </p>
+                                    <p><span>*</span>Subscribe us and get latest news and updates</p>
                                 </div>
                             </div>
                         </div>

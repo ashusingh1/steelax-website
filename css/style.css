@@ -124,7 +124,7 @@ a:focus {
 
 
 @media (min-width: 1200px) {
-    .container {
+    .sec-title .title {
         max-width: 1200px;
     }
 }
@@ -3657,7 +3657,7 @@ select:focus {
     padding-right: 0;
 }
 .top-style2-right .topbar-social-links li a i{
-    color: #7c7e84;
+    color: white;
     font-size: 20px;
     transition: all 500ms ease;
 }
@@ -3666,55 +3666,63 @@ select:focus {
 }
 
 /* General section styling */
+/* Desktop Layout */
+/* Desktop Layout - All items in a single line */
 .style2Section {
     background-color: #f9f9f9;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: nowrap; /* Prevents wrapping */
     margin: 10px auto;
     padding: 10px;
-    gap: 10px; /* Adds spacing between items */
+    gap: 20px; /* Adds spacing between items */
+    overflow-x: auto; /* Ensures no breaking if items exceed width */
 }
 
-/* Individual style2Area styling */
+/* Individual style2Area */
 .style2Area {
-    margin: 5px;
+    flex: 1 1 auto; /* Ensures all items fit in one row */
+    max-width: 150px; /* Ensures equal width */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    
-    border-radius: 10px;
-     /* Adds a subtle shadow */
     text-align: center;
+    padding: 10px;
 }
 
-/* Image styling */
+/* Image Styling */
 .style2Area img {
-    border-radius: 50%; /* Makes images circular */
-    height: 110px; /* Sets consistent height */
-    width: 110px; /* Sets consistent width */
-    object-fit: cover; /* Ensures image fills the circle */
+    width: 120px; /* Uniform width */
+    height: 120px; /* Uniform height */
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover; /* Ensures image fits within the circle */
 }
 
-/* Text styling */
-.style2Area h3 {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    color: rgb(13, 12, 12);
-    transition: color 0.3s ease; /* Smooth transition on hover */
+/* Mobile Layout - Horizontal Scroll for 2 Images */
+@media (max-width: 768px) {
+    .style2Section {
+        display: flex;
+        flex-wrap: nowrap; /* Ensures horizontal scroll */
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .style2Area {
+        flex: 0 0 48%; /* Show 2 images at a time */
+        max-width: 48%;
+        scroll-snap-align: start;
+    }
+
+    .style2Section::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for cleaner UI */
+    }
 }
 
-/* Hover effect on text */
-.style2Area h3:hover {
-    color: #e9212e; /* Changes text color on hover */
-}
+
 .text-manufacturing p{
-   
-    padding-left: 15px;
+   color:rgb(65, 63, 63);
+    text-align: center;
 }
 
 /*** 
@@ -4705,7 +4713,7 @@ select:focus {
     background: linear-gradient(0deg, rgba(39,40,44,0) 0%, rgba(39,40,44,0.8407738095238095) 0%, rgba(39,40,44,1) 0%, rgba(39,40,44,0.7959558823529411) 100%, rgba(39,40,44,1) 100%, rgba(39,40,44,1) 100%, rgba(237,237,237,1) 100%, rgba(32,50,96,0) 100%);
 }
 .single-project-style2:hover .img-holder:after{
-    opacity: 1;    
+    opacity: 0.5;    
 }
 .single-project-style2 .img-holder img{
     width: 100%;
@@ -5543,7 +5551,7 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     padding-bottom: 23px;
 }
 .single-footer-widget .our-info-box .text p{
-    color: #7c7e84;
+    color: white;
     margin: 0;
 }
 .single-footer-widget .our-info-box .follow-us-social-links{
@@ -5587,12 +5595,12 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     margin-right: 0;
 }
 .single-footer-widget .our-info-box .follow-us-social-links ul li a{
-    color: #7c7e84;
+    color: white;
     font-size: 15px;
     transition: all 300ms ease 100ms;
 }
 .single-footer-widget .our-info-box .follow-us-social-links ul li a:hover{
-    color: #ffffff;
+    color: red;
 }
 
 
@@ -5603,6 +5611,7 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     margin-top: -12px;
 }
 .single-footer-widget .usefull-links ul {
+    
     position: relative;
     display: block;
     overflow: hidden;
@@ -5621,14 +5630,14 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     line-height: 36px;
 }
 .single-footer-widget .usefull-links ul li a{
-    color: #7c7e84;
+    color: white;
     font-size: 15px;
     font-weight: 400;
     padding-left: 20px;
     transition: all 500ms ease;
 }
 .single-footer-widget .usefull-links ul li a:hover{
-    color: #ffffff;
+    color: red;
 }
 .single-footer-widget .usefull-links ul li a:before {
     position: absolute;
@@ -5714,7 +5723,7 @@ box-shadow: 0px -4px 10px 3px #e8e8e8;
     padding-top: 14px;
 }
 .single-footer-widget .subscribe-box .text p{
-    color: #7c7e84;
+    color: white;
     font-size: 15px;
     margin: 0;
 }
