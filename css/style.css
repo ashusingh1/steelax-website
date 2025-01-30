@@ -5121,11 +5121,17 @@ select:focus {
 .contact-details-area{
     position: relative;
     display: block;
-    padding: 110px 0 0;
+    padding: 40px 0 0;
     z-index: 4;
 }
 .contact-details-area .sec-title {
     z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
 }
 .contact-details-area .parallax-background{
     position: absolute;
@@ -5209,7 +5215,7 @@ select:focus {
 .contact-details-form-box {
     position: relative;
     display: block;
-    padding: 10px 60px 0px;
+    padding: 0px 60px 0px;
     width: 100%;
     padding-left: 0;
 }
@@ -7435,7 +7441,7 @@ li .single-footer-contact-info {
     position: relative;
     display: inline-block;
     float: left;
-    max-width: 385px;
+    max-width: 370px;
     width: 100%;
     border-right: 1px solid #ededed;
 }

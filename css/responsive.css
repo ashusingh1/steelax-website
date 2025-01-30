@@ -2317,8 +2317,8 @@ li .single-footer-contact-info .inner {
 =============================================
 ***/ 
 .footer-contact-info-area {
-    margin: 0;
-    padding: 30px 0 20px;
+    margin: 0px;
+    padding: 0px 0 10px;
 }    
 li .single-footer-contact-info {
     display: block;
