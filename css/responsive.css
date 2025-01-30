@@ -1171,7 +1171,7 @@ li .single-footer-contact-info .text p br{
 =============================================
 ***/ 
 .footer-area.style4 {
-    padding: 110px 0 100px;
+    padding: 10px 0 10px;
 }    
 .single-footer-widget.pdtop50-s4 {
     padding-top: 50px;
@@ -1824,8 +1824,18 @@ li .single-footer-contact-info .inner {
 =============================================
 ***/     
 .about-style2-image-box {
-    /* margin-top: 170px; */
+    margin-top: 10px;
 }    
+.about-style2-area{
+    position: relative;
+    display: block;
+    padding: 10px 0 10px;
+}
+.about-style2-text .button {
+    position: relative;
+    display: block;
+    padding-top: 20px;
+}
 .about-style2-image-box .pattern {
     top: -110px;
     left: 0;
@@ -1929,7 +1939,7 @@ li .single-footer-contact-info .inner {
 =============================================
 ***/      
 .working-process-style2-area .sec-title {
-    /* padding-bottom: 125px; */
+    padding-bottom: 10px;
 }    
 .about-style2-text .text {
     position: relative;
@@ -1943,6 +1953,7 @@ li .single-footer-contact-info .inner {
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
+    padding: 10px 0 10px;
     z-index: 1;
 }
 .working-process-carousel.owl-carousel .owl-nav {
@@ -2046,6 +2057,16 @@ li .single-footer-contact-info .inner {
     width: 100%;
 }  
 
+.single-footer-widget .our-info-box .text p {
+    color: white;
+    margin: 1px;
+}
+.single-footer-widget .title-style2 {
+    position: relative;
+    display: block;
+    margin-top: -4px;
+    padding-bottom: 20px;
+}
     
     
     
@@ -2184,7 +2205,16 @@ li .single-footer-contact-info .inner {
     margin-top: 0px;
     float: none !important;
     padding-bottom: 42px;
-}    
+}   
+.brand-area.style2 .col-xl-12 ul {
+    display: flex;
+    flex-wrap: wrap;              /* Allows wrapping if necessary */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Aligns items vertically */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+} 
     
 /*** 
 =============================================
@@ -2217,7 +2247,7 @@ li .single-footer-contact-info .inner {
 =============================================
 ***/ 
 .company-overview-area {
-    padding: 105px 0 86px;
+    padding: 43px 0 40px;
 }     
 .intro-box {
     position: relative;
@@ -2267,15 +2297,20 @@ li .single-footer-contact-info .inner {
 =============================================
 ***/ 
 .footer-area.style4 {
-    padding: 110px 0 100px;
+    padding: 10px 0 10px;
 } 
 .single-footer-widget.marbtm50-s4 {
     margin-bottom: 50px;
+
 }    
 .single-footer-widget.pdtop50-s4 {
     padding-top: 50px;
 }  
-    
+    .single-footer-widget .our-info-box .footer-logo {
+    position: relative;
+    display: block;
+    padding-bottom: 20px;
+}
 /*** 
 =============================================
     Footer Contact Info Area Style
@@ -2299,7 +2334,16 @@ li .single-footer-contact-info .inner {
     display: block;
     padding: 15px 0px 15px;
 }    
-    
+.single-footer-widget .our-info-box .text {
+    position: relative;
+    display: block;
+    padding-bottom: 15px;
+} 
+.single-footer-widget .usefull-links ul li {
+    position: relative;
+    display: block;
+    line-height: 20px;
+}
 /*** 
 =============================================
     Footer Bottom Area Style3 style
@@ -2360,7 +2404,12 @@ li .single-footer-contact-info .inner {
     padding: 0 10px;
     padding-right: 135px;
 }    
-    
+.services-style2-service-page{
+    position: relative;
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 50px;
+} 
 /*** 
 =============================================
     Error Page Area style
