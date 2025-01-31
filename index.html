@@ -58,17 +58,17 @@
     width: 100%; /* Adjusts to container */
     height: 100%; /* Ensures uniform height */
     object-fit: cover; /* Ensures images fit without distortion */
-    border-radius: 10px; /* Ensures consistent rounded corners */
+    border-radius: 8px; /* Ensures consistent rounded corners */
     border: 2px solid white; /* Adds a border to all images */
     transition: transform 0.3s ease;
 }
 
 .usp1 {
-    padding: 10px;
+    padding: 1px;
 }
 
 .usp3 {
-    padding: 8px;
+    padding: 12px;
 }
 
 /* Hover Effect - Desktop Only */
@@ -92,7 +92,10 @@
         flex: 0 0 48%; /* Show 2 images at a time */
         max-width: 48%;
         scroll-snap-align: start;
-        height: 150px; /* Fixed height for mobile */
+        height: auto; /* Maintain aspect ratio */
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Fixed height for mobile */
     }
 
     .usp-container {
@@ -1459,11 +1462,11 @@
                                         Managed by @akestechinfotech</p>
                                 </div>
                                 <div class="follow-us-social-links clearfix">
-                                    <span>Follow Us On:</span>
+                                    
                                     <ul>
-                                        <li><a href="https://www.facebook.com/Steelax.in/"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                                        <li><a href="https://www.facebook.com/Steelax.in/"><i class="fa-brands fa-facebook "></i></a></li>
                                         <li><a href="https://www.instagram.com/steelaxinterio/?hl=en"><i
-                                            class="fa-brands fa-instagram fa-2x"></i></a></li>
+                                            class="fa-brands fa-instagram "></i></a></li>
                                       </ul>
                                 </div>
                             </div>
